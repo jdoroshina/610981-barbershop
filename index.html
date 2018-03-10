@@ -6,28 +6,30 @@
   </head>
   <body>
   	<header class="main-header">
-  		<a href="#">
-        <img src="img/logo.jpg" alt="Логотип Барбершопа Бородинский">
-      </a> 
-  		<ul class="cite-navigation">
-  			<li>Информация</li>
-  			<li>Новости</li>
-  			<li>Прайс-лист</li>
-  			<li>
-          <a href="catalog.html">Контакты</a>
-        </li>
-        <li>Магазин</li>
-  		</ul>
-  		<ul class="user-navigation">
-  			<li>
-          <a href="#">Вход</a>
-        </li>
-  		</ul>
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#">
+          <img src="img/logo.jpg" alt="Логотип Барбершопа Бородинский">
+        </a>
+  		  <ul class="site-navigation">
+  			 <li>Информация</li>
+  			 <li>Новости</li>
+  			 <li>Прайс-лист</li>
+  			 <li>
+            <a href="catalog.html">Контакты</a>
+          </li>
+          <li>Магазин</li>
+  		  </ul>
+  		  <ul class="user-navigation">
+  			 <li>
+            <a href="#">Вход</a>
+          </li>
+  		  </ul>
+      </nav>      
   	</header>
   	<main class="container">
   		<h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
   		<section class="advantages">
-  			<h2 class="vissually-hidden">О нас</h2>
+  			<h2 class="vissually-hidden">Преимущества</h2>
   			<ul class="advantages-list">
   				<li class="advantages-list-item">
             <span class="advantages-list-item-name">Быстро</span>
@@ -55,17 +57,22 @@
           <time datetime="01-18">18 января</time>
           </li>
         </ul>
-  			<a href="#" class="news-button">Все новости</a>
+  			<a class="news-button" href="#">Все новости</a>
   		</section>
   		<section class="gallery">
-  			<h2 class="gallery-name">Фотогалерея</h2>
-  			<a class="gallery-name" href="#">
-          <img src="img/workspace.jpg" alt="фото зала">
-        </a>
-  			<div class="gallery-button">
+  			<h2 class="gallery-name">Фотогалерея</h2>  			
+          <figure class="gallery-content">
+            <a href="#">
+              <img src="img/workspace.jpg" alt="фото зала">
+            </a>            
+          </figure>
+  			<!-- <div class="gallery-button"> 
   				<button class="gallery-button-backward">Назад</button>
   				<button class="gallery-button-forward">Вперед</button>
-  			</div>
+  			</div> -->
+        <span class="button gallery-button gallery-button-back">Назад</span>
+        <span class="button gallery-button gallery-button-next">Вперед</span>
+        <!-- Разобраться почему так, а не как сделала я -->
   		</section>
 		<section class="contacts">
 			<h2 class="contacts-name">Контактная информация</h2>
@@ -78,39 +85,54 @@
 				<p class="contacts-info-schedule">
 					ВРЕМЯ РАБОТЫ:<br>
 					ПН—ПТ: С 10:00 ДО 22:00<br>
-					СБ—ВС: С 10:00 ДО 19:00<br>
+					СБ—ВС: С 10:00 ДО 19:00
 				</p>
 			</address>
+      <!-- не оборачивали в <address> Почему? -->
       <div class="contact-link">
-        <a href="#" class="contact-link-map">Как проехать</a>
-        <a href="#" class="contact-link-feedback">>Обратная связь</a>
+        <a class="contact-button" href="#">Как проехать</a>
+        <a class="contact-button" href="#">>Обратная связь</a>
       </div>
+      <!-- В демке не оборачивали в <div> Почему? -->
 		</section>
 		<section class="enroll">
 			<h2 class="enroll-name">Записаться</h2>
-			<p class="enroll-description">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-			<button class="enroll-button">Отправить</button>>
+			<p class="enroll-description">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+      <!-- Здесь будет форма -->
 		</section>
 	</main>
 	<footer class="main-footer">
-		<address class="main-footer-contacts">
+		<address class="footer-contacts">
 			БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
 			<a href="#">КАК НАС НАЙТИ?</a><br>
-			ТЕЛЕФОН: +7 (495) 666-02-66<br>
+			ТЕЛЕФОН: +7 (495) 666-02-66
 		</address>
-		<div class="main-footer-social">
-			<span class="main-footer-social-text">Давайте дружить!</span>
-			<ul class="main-footer-social-list">
-				<li class="main-footer-social-item">Вконтакте</li>
-				<li class="main-footer-social-item">Фейсбук</li>
-				<li class="main-footer-social-item">Инстаграм</li>
-			</ul>
+    <!-- Делали через <p> -->
+		<div class="footer-social">
+			<span class="footer-social-text">Давайте дружить!</span>
+      <ul>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
 		</div>
-    <div class="main-footer-copyright">
-      <span class="main-footer-copyright-text">Разработано</span>
-      <a class="main-footer-copyright-link" href="#">Html academy</a>
+    <div class="footer-copyright">
+      <span class="footer-copyright-text">Разработано</span>
+      <a class="footer-copyright-link" href="#">Html academy</a>
     </div>
 	</footer>
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <!-- Здесь будет форма -->
+    <span class="modal-close">x</span>
+  </section>
+    
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <span class="modal-close">x</span>
+  </section>
   </body>
 </html>
