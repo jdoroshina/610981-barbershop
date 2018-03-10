@@ -5,8 +5,112 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+  	<header class="main-header">
+  		<a href="#">
+        <img src="img/logo.jpg" alt="Логотип Барбершопа Бородинский">
+      </a> 
+  		<ul class="cite-navigation">
+  			<li>Информация</li>
+  			<li>Новости</li>
+  			<li>Прайс-лист</li>
+  			<li>
+          <a href="catalog.html">Контакты</a>
+        </li>
+        <li>Магазин</li>
+  		</ul>
+  		<ul class="user-navigation">
+  			<li>
+          <a href="#">Вход</a>
+        </li>
+  		</ul>
+  	</header>
+  	<main class="container">
+  		<h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+  		<section class="advantages">
+  			<h2 class="vissually-hidden">О нас</h2>
+  			<ul class="advantages-list">
+  				<li class="advantages-list-item">
+            <span class="advantages-list-item-name">Быстро</span>
+  				  <p class="advantages-list-item-text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы  - счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="advantages-list-item">
+            <span class="advantages-list-item-name">Круто</span>
+            <p class="advantages-list-item-text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+          </li>
+          <li class="advantages-list-item">
+            <span class="advantages-list-item-name">Дорого</span>
+            <p class="advantages-list-item-text">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена на дает определенный статус?</p>
+          </li>
+        </ul>
+  		</section>
+  		<section class="News">
+  			<h2 class="News-title">Новости</h2>
+  			<ul class="news-list">
+  				<li class="news-list-item">
+            <p class="news-list-item-text">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+  				<time datetime="01-11">11 января</time>
+          </li>
+          <li class="news-list-item">
+            <p class="news-list-item-text">В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+          <time datetime="01-18">18 января</time>
+          </li>
+        </ul>
+  			<a href="#" class="news-button">Все новости</a>
+  		</section>
+  		<section class="gallery">
+  			<h2 class="gallery-name">Фотогалерея</h2>
+  			<a class="gallery-name" href="#">
+          <img src="img/workspace.jpg" alt="фото зала">
+        </a>
+  			<div class="gallery-button">
+  				<button class="gallery-button-backward">Назад</button>
+  				<button class="gallery-button-forward">Вперед</button>
+  			</div>
+  		</section>
+		<section class="contacts">
+			<h2 class="contacts-name">Контактная информация</h2>
+			<address class="contacts-info">
+				<p class="contacts-info-details">
+					БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+					ТЕЛЕФОН: +7 (495) 666-02-66
+				</p>
+				<p class="contacts-info-schedule">
+					ВРЕМЯ РАБОТЫ:<br>
+					ПН—ПТ: С 10:00 ДО 22:00<br>
+					СБ—ВС: С 10:00 ДО 19:00<br>
+				</p>
+			</address>
+      <div class="contact-link">
+        <a href="#" class="contact-link-map">Как проехать</a>
+        <a href="#" class="contact-link-feedback">>Обратная связь</a>
+      </div>
+		</section>
+		<section class="enroll">
+			<h2 class="enroll-name">Записаться</h2>
+			<p class="enroll-description">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+			<button class="enroll-button">Отправить</button>>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<address class="main-footer-contacts">
+			БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+			<a href="#">КАК НАС НАЙТИ?</a><br>
+			ТЕЛЕФОН: +7 (495) 666-02-66<br>
+		</address>
+		<div class="main-footer-social">
+			<span class="main-footer-social-text">Давайте дружить!</span>
+			<ul class="main-footer-social-list">
+				<li class="main-footer-social-item">Вконтакте</li>
+				<li class="main-footer-social-item">Фейсбук</li>
+				<li class="main-footer-social-item">Инстаграм</li>
+			</ul>
+		</div>
+    <div class="main-footer-copyright">
+      <span class="main-footer-copyright-text">Разработано</span>
+      <a class="main-footer-copyright-link" href="#">Html academy</a>
+    </div>
+	</footer>
   </body>
 </html>
