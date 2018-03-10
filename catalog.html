@@ -7,17 +7,17 @@
   <body>
   	<header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.jpg" alt="Логотип Барбершопа Бородинский">
         </a>
   		  <ul class="site-navigation">
   			 <li>Информация</li>
   			 <li>Новости</li>
   			 <li>Прайс-лист</li>
-  			 <li>
-            <a href="catalog.html">Контакты</a>
+  			 <li class="site-navigation-current">
+            <a href="catalog.html">Магазин</a>
           </li>
-          <li>Магазин</li>
+          <li>Контакты</li>
   		  </ul>
   		  <ul class="user-navigation">
   			 <li>
@@ -33,99 +33,136 @@
           <li class="container-item">
             <a href="#">Главная</a>
           </li>
-          <li class="container-item">
+          <li class="container-item-current">
             <a href="#">Магазин</a>
           </li>
           <li class="container-item">Средства для ухода</li>
         </ul>
       </header>
+      <!-- Header не делалаи -->
       <section class="filter">
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <!-- Здесь будет форма -->
       </section>
       <section class="product">
-        <h2 class="visually-hidden">Товары</h2>
+        <h2 class="visually-hidden">Список средств для ухода</h2>
         <article class="product-item">
           <figure class="product-pic">
             <a class="product-link" href="#">
               <img src="img/baxter-travelkit.jpg" alt="Товар Набор для путешествий">
+            </a>
           </figure>
-          <a href="#" class="product-name">
-            <h3>Набор для путешествий "Baxter of california"</h3>
-          </a>
-          <span class="product-price">2900 Р</span>
-          <a class="product-button" href="#">купить</a>
+          <h3>
+            <a class="product-name" href="#">
+              <span class="product-name-title">Набор для путешествий</span>
+              <span class="product-name-brand">"Baxter of california"</span>
+            </a>
+          </h3>
+          <p class="product-price">
+            <span>2 900 ₽</span>
+            <a class="product-button" href="#">купить</a>
+          </p>
         </article>
         <article class="product-item">
           <figure class="product-pic">
             <a class="product-link" href="#">
               <img src="img/baxter-moistlotion.jpg" alt="Товар Увлажняющий кондиционер">
+            </a>
           </figure>
-          <a href="#" class="product-name">
-            <h3>Увлажняющий кондиционер "Baxter of california"</h3>
-          </a>
-          <span class="product-price">750 Р</span>
-          <a class="product-button" href="#">купить</a>
+          <h3>
+            <a class="product-name" href="#">
+              <span class="product-name-title">Увлажняющий кондиционер</span>
+              <span class="product-name-brand">"Baxter of california"</span>
+            </a>
+          </h3>
+          <p class="product-price">
+            <span>750 ₽</span>
+            <a class="product-button" href="#">купить</a>
+          </p>
         </article>
         <article class="product-item">
           <figure class="product-pic">
             <a class="product-link" href="#">
               <img src="img/Suavecito-gel.jpg" alt="Товар Гель для волос">
+            </a>
           </figure>
-          <a href="#" class="product-name">
-            <h3>Гель для волос "Suavecito"</h3>
-          </a>
-          <span class="product-price">290 Р</span>
-          <a class="product-button" href="#">купить</a>
+          <h3>
+            <a class="product-name" href="#">
+              <span class="product-name-title">Гель для волос</span>
+              <span class="product-name-brand">"Suavecito""</span>
+            </a>
+          </h3>
+          <p class="product-price">
+            <span>290 ₽</span>
+            <a class="product-button" href="#">купить</a>
+          </p>
         </article>
         <article class="product-item">
           <figure class="product-pic">
             <a class="product-link" href="#">
               <img src="img/americancrew-styling-mud.jpg" alt="Товар Глина для укладки волос">
+            </a>
           </figure>
-          <a href="#" class="product-name">
-            <h3>Глина для укладки волос "American crew"</h3>
-          </a>
-          <span class="product-price">500 Р</span>
-          <a class="product-button" href="#">купить</a>
+          <h3>
+            <a class="product-name" href="#">
+              <span class="product-name-title">Глина для укладки волос</span>
+              <span class="product-name-brand">"American crew"</span>
+            </a>
+          </h3>
+          <p class="product-price">
+            <span>500 ₽</span>
+            <a class="product-button" href="#">купить</a>
+          </p>
         </article>
         <article class="product-item">
           <figure class="product-pic">
             <a class="product-link" href="#">
               <img src="img/americancrew-gel.jpg" alt="Товар Гель для волос">
+            </a>
           </figure>
-          <a href="#" class="product-name">
-            <h3>Гель для волос "American crew"</h3>
-          </a>
-          <span class="product-price">300 Р</span>
-          <a class="product-button" href="#">купить</a>
+          <h3>
+            <a class="product-name" href="#">
+              <span class="product-name-title">Гель для волос</span>
+              <span class="product-name-brand">"American crew"</span>
+            </a>
+          </h3>
+          <p class="product-price">
+            <span>300 ₽</span>
+            <a class="product-button" href="#">купить</a>
+          </p>
         </article>
         <article class="product-item">
           <figure class="product-pic">
             <a class="product-link" href="#">
               <img src="img/baxter-shawingkit.jpg" alt="Товар Набор для бритья">
+            </a>
           </figure>
-          <a href="#" class="product-name">
-            <h3>Набор для бритья "Baxter of california"</h3>
-          </a>
-          <span class="product-price">3900 Р</span>
-          <a class="product-button" href="#">купить</a>
+          <h3>
+            <a class="product-name" href="#">
+              <span class="product-name-title">Набор для бритья</span>
+              <span class="product-name-brand">"Baxter of california"</span>
+            </a>
+          </h3>
+          <p class="product-price">
+            <span>3 900 ₽</span>
+            <a class="product-button" href="#">купить</a>
+          </p>
         </article>
       </section>
-      <div class="page-count">
-        <ul class="page-count-list">
-          <li>
-            <a class="page-count-item" href="#">1</a>
-          </li>
-          <li>2</li>
-          <li>
-            <a class="page-count-item" href="#">3</a>
-          </li>
-          <li>
-            <a class="page-count-item" href="#">4</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="pagination-list">
+        <li class="pagination-item">
+          <a href="#">1</a>
+        </li>
+        <li class="pagination-item pagination-item-current">
+          <a>2</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">4</a>
+        </li>
+      </ul>
 	</main>
 	<footer class="main-footer">
 		<address class="footer-contacts">
@@ -153,11 +190,6 @@
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
     <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
-  </section>
-    
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
     <span class="modal-close">x</span>
   </section>
   </body>
